@@ -6,7 +6,7 @@ export default function CreateMessage() {
     author: '',
     content: '',
   })
-  const client = new PocketBase('http://52.221.227.71')
+  const client = new PocketBase(process.env.NEXT_PUBLIC_HOST)
 
   const handleSubmit = async (e: any) => {
     e.preventDefault()

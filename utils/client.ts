@@ -1,3 +1,3 @@
 import PocketBase from 'pocketbase'
 
-export const client = new PocketBase('http://52.221.227.71')
+export const client = new PocketBase(process.env.NEXT_PUBLIC_HOST)

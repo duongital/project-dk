@@ -10,7 +10,7 @@ import Khanh from 'assets/khanh.svg'
 function Cover() {
   const SIZE = 400
   return (
-    <div className="flex justify-between items-center">
+    <div className="flex justify-between items-center my-12">
       <Image width={SIZE} height={SIZE} alt="left" src={FlowerLeft} />
       <div className="flex flex-col">
         <Image height={80} width={100} alt="Duong" src={Duong} />

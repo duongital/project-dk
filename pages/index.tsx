@@ -2,6 +2,7 @@ import type { NextPage } from 'next'
 import Head from 'next/head'
 
 import Messages from 'components/Messages'
+import CreateMessage from 'components/CreateMessage'
 import Cover from 'components/Cover'
 
 const Home: NextPage = () => {
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Cover />
+      <CreateMessage />
       <Messages />
     </div>
   )

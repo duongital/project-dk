@@ -2,6 +2,13 @@ import { useEffect } from 'react'
 import PocketBase from 'pocketbase'
 import useSWR, { useSWRConfig } from 'swr'
 
+type Card = {
+  id: string
+  content: string
+  author: string
+  created: string
+}
+
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
 
 export default function ComingSoon() {
@@ -23,17 +30,19 @@ export default function ComingSoon() {
   if (!data) return <div>đang tải...</div>
 
   return (
-    <article className="container mx-auto py-12">
-      <h1 className="text-2xl text-center">lời chúc:</h1>
+    <article className="container mx-auto my-12">
       <div className="flex flex-wrap">
-        {data.items?.map((item: any) => (
-          <section className="w-1/3 m-2" key={item.id}>
-            <div className="border p-4 rounded-md">
-              <h1>author: {item.author}</h1>
-              <h1>content: {item.content}</h1>
-            </div>
-          </section>
-        ))}
+        {data.items
+          ?.sort((a: Card, b: Card) => new Date(b.created).getTime() - new Date(a.created).getTime())
+          .map((item: Card) => (
+            <section className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2" key={item.id}>
+              <div className="border p-2 rounded-md">
+                <h1 className="text-lg font-bold">author: {item.author}</h1>
+                <h1>content: {item.content}</h1>
+                <pre className="text-xs">{JSON.stringify(item.created)}</pre>
+              </div>
+            </section>
+          ))}
       </div>
     </article>
   )

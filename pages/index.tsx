@@ -1,23 +1,22 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
-import ComingSoon from "components/ComingSoon";
+import Messages from 'components/Messages'
+import Cover from 'components/Cover'
 
 const Home: NextPage = () => {
   return (
     <div>
       <Head>
         <title>Dương & Khánh</title>
-        <meta
-          name="description"
-          content="Duong and Khanh wedding information"
-        />
+        <meta name="description" content="Duong and Khanh wedding information" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <ComingSoon />
+      <Cover />
+      <Messages />
     </div>
-  );
-};
+  )
+}
 
-export default Home;
+export default Home

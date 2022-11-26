@@ -19,8 +19,8 @@ export default function Messages() {
     }
   }, [])
 
-  if (error) return <div>failed to load</div>
-  if (!data) return <div>loading...</div>
+  if (error) return <div className="text-center my-12">failed to load</div>
+  if (!data) return <div className="text-center my-12">loading...</div>
 
   return (
     <article className="container mx-auto py-12">

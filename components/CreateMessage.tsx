@@ -36,12 +36,15 @@ function CreateMessage() {
   return (
     <>
       <div>
-        <h1 className="text-4xl text-center font-light uppercase">Gửi lời yêu thương</h1>
+        <h1 className="text-2xl md:text-4xl text-center font-light uppercase">Gửi lời yêu thương</h1>
         <p className="text-center w-full md:w-2/3 mx-auto my-4">
           Hãy cùng gửi đến đôi bạn trẻ Dương&Khánh những lời yêu thương cho hành trình mới của mình nhé!{' '}
         </p>
         <div className="w-full text-center my-8">
-          <button onClick={openModal} className="bg-primary text-white p-4 rounded-md uppercase">
+          <button
+            onClick={openModal}
+            className="uppercase inline-flex items-center rounded-md border border-transparent bg-secondary/60 px-4 py-2 text-base font-light text-white shadow-sm hover:bg-secondary/70 focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:ring-offset-2"
+          >
             Viết lời chúc
           </button>
         </div>
@@ -72,7 +75,7 @@ function CreateMessage() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-md transform overflow-hidden rounded-md bg-primary py-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-md bg-primary py-6 text-left align-middle shadow-xl transition-all">
                     <Dialog.Title as="h3" className="text-2xl font-light leading-6 text-white uppercase text-center">
                       Viết lời chúc
                     </Dialog.Title>
@@ -96,12 +99,11 @@ function CreateMessage() {
                             <textarea
                               className="text-secondary p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary sm:text-sm"
                               value={message.content}
-                              rows={3}
+                              rows={5}
                               required
                               onChange={(e) => {
                                 setMessage({ ...message, content: e.target.value })
                               }}
-                              defaultValue="..."
                               name="content"
                             />
                           </label>
@@ -109,7 +111,7 @@ function CreateMessage() {
                             Gửi
                           </button>
                         </form>
-                        <Image src={ComposeFlower} width={300} height={100} alt="flower" />
+                        <Image placeholder="blur" src={ComposeFlower} width={300} height={100} alt="flower" />
                       </div>
                     </article>
                   </Dialog.Panel>

@@ -36,10 +36,11 @@ export default function ComingSoon() {
           ?.sort((a: Card, b: Card) => new Date(b.created).getTime() - new Date(a.created).getTime())
           .map((item: Card) => (
             <section className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2" key={item.id}>
-              <div className="border p-2 rounded-md">
-                <h1 className="text-lg font-bold">author: {item.author}</h1>
-                <h1>content: {item.content}</h1>
-                <pre className="text-xs">{JSON.stringify(item.created)}</pre>
+              <div className="border p-2 rounded-md bg-card">
+                <p className="text-center text-xs">{item.content}</p>
+                <hr className="border-gray-400/50 my-4" />
+                <h1 className="text-md text-center font-bold">{item.author}</h1>
+                {/* <pre className="text-xs">{JSON.stringify(item.created)}</pre> */}
               </div>
             </section>
           ))}

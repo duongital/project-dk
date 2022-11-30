@@ -3,5 +3,5 @@
 @tailwind utilities;
 
 body {
-  @apply bg-pink-50;
+  font-family: 'Be Vietnam Pro', sans-serif;
 }

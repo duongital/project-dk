@@ -80,8 +80,11 @@ function CreateMessage() {
                       Viết lời chúc
                     </Dialog.Title>
                     <article className="container py-12">
-                      <div className="flex justify-between">
-                        <form onSubmit={handleSubmit} className="flex flex-col gap-y-4 w-full pl-6">
+                      <div className="flex justify-between items-start">
+                        <form
+                          onSubmit={handleSubmit}
+                          className="flex flex-col gap-y-4 w-full pl-4 md:pl-6 pr-4 md:pr-0"
+                        >
                           <label htmlFor="author" className="flex flex-col ">
                             <span className="text-white">Người gửi</span>
                             <input
@@ -111,7 +114,9 @@ function CreateMessage() {
                             Gửi
                           </button>
                         </form>
-                        <Image placeholder="blur" src={ComposeFlower} width={300} height={100} alt="flower" />
+                        <div className="hidden md:block">
+                          <Image placeholder="blur" src={ComposeFlower} width={300} height={300} alt="flower" />
+                        </div>
                       </div>
                     </article>
                   </Dialog.Panel>

@@ -26,8 +26,8 @@ export default function ComingSoon() {
     }
   }, [])
 
-  if (error) return <div>lỗi</div>
-  if (!data) return <div>đang tải...</div>
+  if (error) return <p className="text-center my-24">lỗi</p>
+  if (!data) return <p className="text-center my-24">đang tải...</p>
 
   return (
     <article className="container mx-auto my-12">

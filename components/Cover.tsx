@@ -10,7 +10,7 @@ function Cover() {
       <Image placeholder="blur" width={SIZE} height={SIZE} alt="left" src={FlowerLeft} />
       <div className="flex flex-col text-center text-3xl md:text-6xl whitespace-nowrap text-secondary">
         <h1>Đại Dương</h1>
-        <h1 className="text-sm">&</h1>
+        <h1 className="text-lg">&</h1>
         <h1>Hoàng Khánh</h1>
       </div>
       <Image placeholder="blur" width={SIZE} height={SIZE} alt="right" src={FlowerRight} />

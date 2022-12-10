@@ -12,7 +12,7 @@ const Home: NextPage = () => {
     <>
       <Head>
         <title>Đại Dương & Hoàng Khánh</title>
-        <meta name="description" content="Gửi lời chúc mừng đến chú rể & cô dâu ngay!" />
+        <meta name="description" content="Cùng gửi lời chúc mừng đến chú rể & cô dâu ngay nhé!" />
         <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />

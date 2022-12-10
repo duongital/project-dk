@@ -9,11 +9,11 @@ import Introduction from 'components/Introduction'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <>
       <Head>
-        <title>Dương & Khánh</title>
-        <meta name="description" content="Duong and Khanh wedding information" />
-        <link rel="icon" href="/favicon.ico" />
+        <title>Đại Dương & Hoàng Khánh</title>
+        <meta name="description" content="Gửi lời chúc mừng đến chú rể & cô dâu ngay!" />
+        <link rel="icon" href="/favicon.svg" sizes="any" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" />
         <link
@@ -26,7 +26,7 @@ const Home: NextPage = () => {
       <Introduction />
       <CreateMessage />
       <Messages />
-    </div>
+    </>
   )
 }
 

@@ -13,12 +13,12 @@ function Introduction() {
         <Image className="rounded-full" src={CR} alt="CR" width={200} height={200} />
         <h1 className="text-3xl font-light text-secondary">Đại Dương</h1>
         <i className="text-center text-gray-600">
-          Chàng IT nhà huê với nhiều đam mê và nỗ lực xây dựng đế chế <strong>@duongital</strong> phủ rộng khắp thế
+          Chàng IT nhà huê với nhiều đam mê và nổ lực xây dựng đế chế <strong>@duongital</strong> phủ rộng khắp thế
           giới. Tương lai sẽ sở hữu nhiều căn biệt thự triệu đô. Hiện tại có khối tài sản là nhiều tấm lòng vàng.
         </i>
         <div className="text-center">
-          <p className="font-bold text-sm opacity-50">Quỹ đen của chú rễ</p>
-          <div className="flex gap-x-2 items-center text-secondary">
+          <p className="font-bold text-sm opacity-50">Quỹ đen chú rể</p>
+          <div className="flex gap-x-2 items-center opacity-10">
             <Image width={24} height={24} src={IconMetamask} alt="metamask" />
             <pre className="text-xs">0x293f661a339d87CA2055E91C12Bac4cF08d16666</pre>
           </div>

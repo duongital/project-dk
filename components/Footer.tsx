@@ -5,7 +5,7 @@ import CDCR from 'assets/CDCR.jpg'
 function Footer() {
   return (
     <section className="container mx-auto">
-      <Image src={CDCR} alt="CDCR" />
+      <Image placeholder="blur" src={CDCR} alt="CDCR" />
       <div className="text-center my-24">
         <h1 className="text-4xl">Cám ơn mọi người đã kéo đến đây</h1>
         <p>website có bug gì hú mình nha, hava nice day!</p>

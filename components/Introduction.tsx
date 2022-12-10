@@ -13,8 +13,8 @@ function Introduction() {
         <Image className="rounded-full" src={CR} alt="CR" width={200} height={200} />
         <h1 className="text-3xl font-light text-secondary">Đại Dương</h1>
         <i className="text-center text-gray-600">
-          Chàng IT nhà huê với nhiều đam mê và nỗ lực xây dựng đế chế duongital phủ rộng khắp thế giới. Tương lai sẽ sở
-          hữu nhiều căng biệt thự triệu đô. Hiện tại có khối tài sản là nhiều tấm lòng vàng.
+          Chàng IT nhà huê với nhiều đam mê và nỗ lực xây dựng đế chế <strong>@duongital</strong> phủ rộng khắp thế
+          giới. Tương lai sẽ sở hữu nhiều căn biệt thự triệu đô. Hiện tại có khối tài sản là nhiều tấm lòng vàng.
         </i>
         <div className="text-center">
           <p className="font-bold text-sm opacity-50">Quỹ đen của chú rễ</p>

@@ -6,6 +6,7 @@ import Messages from 'components/Messages'
 import CreateMessage from 'components/CreateMessage'
 import Cover from 'components/Cover'
 import Introduction from 'components/Introduction'
+import Footer from 'components/Footer'
 
 const Home: NextPage = () => {
   return (
@@ -26,6 +27,7 @@ const Home: NextPage = () => {
       <Introduction />
       <CreateMessage />
       <Messages />
+      <Footer />
     </>
   )
 }

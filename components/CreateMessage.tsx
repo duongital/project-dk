@@ -38,7 +38,7 @@ function CreateMessage() {
       <div>
         <h1 className="text-2xl md:text-4xl text-center font-light uppercase">Gửi lời yêu thương</h1>
         <p className="text-center w-full md:w-2/3 mx-auto my-4">
-          Hãy cùng gửi đến đôi bạn trẻ Dương&Khánh những lời yêu thương cho hành trình mới của mình nhé!{' '}
+          Hãy cùng gửi đến đôi bạn trẻ Dương & Khánh những lời yêu thương cho hành trình mới của mình nhé!{' '}
         </p>
         <div className="w-full text-center my-8">
           <button

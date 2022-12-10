@@ -5,6 +5,7 @@ import Head from 'next/head'
 import Messages from 'components/Messages'
 import CreateMessage from 'components/CreateMessage'
 import Cover from 'components/Cover'
+import Introduction from 'components/Introduction'
 
 const Home: NextPage = () => {
   return (
@@ -22,6 +23,7 @@ const Home: NextPage = () => {
       </Head>
 
       <Cover />
+      <Introduction />
       <CreateMessage />
       <Messages />
     </div>

@@ -43,7 +43,7 @@ function CreateMessage() {
         <div className="w-full text-center my-8">
           <button
             onClick={openModal}
-            className="uppercase inline-flex items-center rounded-md border border-transparent bg-secondary/60 px-4 py-2 text-base font-light text-white shadow-sm hover:bg-secondary/70 focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:ring-offset-2"
+            className="uppercase inline-flex items-center rounded-md border border-transparent bg-secondary px-4 py-2 text-base font-light text-white shadow-sm hover:bg-secondary/90 focus:outline-none focus:ring-2 focus:ring-secondary/50 focus:ring-offset-2"
           >
             Viết lời chúc
           </button>
@@ -75,7 +75,7 @@ function CreateMessage() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-md bg-primary py-6 text-left align-middle shadow-xl transition-all">
+                  <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-md bg-secondary py-6 text-left align-middle shadow-lg transition-all">
                     <Dialog.Title as="h3" className="text-2xl font-light leading-6 text-white uppercase text-center">
                       Viết lời chúc
                     </Dialog.Title>

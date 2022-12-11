@@ -30,13 +30,13 @@ export default function ComingSoon() {
   if (!data) return <p className="text-center my-24">đang tải...</p>
 
   return (
-    <article className="container mx-auto my-12">
-      <div className="flex flex-wrap">
+    <article className="container px-4 md:px-0 mx-auto my-12">
+      <div className="columns-1 md:columns-2 lg:columns-3">
         {data.items
           ?.sort((a: Card, b: Card) => new Date(b.created).getTime() - new Date(a.created).getTime())
           .map((item: Card) => (
-            <section className="w-full sm:w-1/2 md:w-1/3 lg:w-1/4 p-2" key={item.id}>
-              <div className="border p-4 md:p-6 rounded-md bg-card">
+            <section className="m-0 grid grid-rows-1 break-inside-avoid mb-4" key={item.id}>
+              <div className="border p-4 md:p-6 rounded-md bg-card break-inside-avoid">
                 <p className="text-center text-xs">{item.content}</p>
                 <hr className="border-gray-400/50 my-4" />
                 <h1 className="text-sm text-center font-bold">{item.author}</h1>

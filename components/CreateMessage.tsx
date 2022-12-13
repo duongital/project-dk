@@ -75,7 +75,7 @@ function CreateMessage() {
                   leaveFrom="opacity-100 scale-100"
                   leaveTo="opacity-0 scale-95"
                 >
-                  <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-md bg-secondary py-6 text-left align-middle shadow-lg transition-all">
+                  <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-md bg-primary py-6 text-left align-middle shadow-lg transition-all">
                     <Dialog.Title as="h3" className="text-2xl font-light leading-6 text-white uppercase text-center">
                       Viết lời chúc
                     </Dialog.Title>

@@ -1,4 +1,4 @@
-# Duong & Khanh Wedding Information
+# Dai Duong & Hoang Khanh Wedding
 
 ## notes
 
@@ -6,12 +6,11 @@ this project is public for my personal wedding in December 2022. If you find any
 
 features:
 
-- [ ] a place to show timetime and wedding information
-- [ ] users can post congrat messages and saved on the page
+- [x] a place to show timetime and wedding information
+- [x] users can post congrat messages and saved on the page
+- [ ] extract text to json file
 
 ## stacks
 
-- created by Next JS framework
-- styles by Tailwind CSS
-- frontend deployed and hosted by Vercel
-- backend backed by PocketBase and deployed on AWS EC2
+- frontend stacks: [Next JS](https://nextjs.org/), [Tailwind CSS](https://tailwindcss.com/) and deployed on [Vercel](https://vercel.com/)
+- backend backed by [PocketBase](https://pocketbase.io/) and deployed on [AWS EC2](https://aws.amazon.com/ec2/)

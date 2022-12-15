@@ -38,8 +38,8 @@ export default function ComingSoon() {
             <section className="m-0 grid grid-rows-1 break-inside-avoid mb-4" key={item.id}>
               <div className="border p-4 md:p-6 rounded-md bg-card break-inside-avoid">
                 <p className="text-center text-xs">{item.content}</p>
-                <hr className="border-gray-400/50 my-4" />
-                <h1 className="text-sm text-center font-bold">{item.author}</h1>
+                <hr className="border-white my-4" />
+                <h1 className="text-secondary text-sm text-center font-bold">{item.author}</h1>
                 {/* <pre className="text-xs">{JSON.stringify(item.created)}</pre> */}
               </div>
             </section>

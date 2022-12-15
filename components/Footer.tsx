@@ -7,11 +7,11 @@ function Footer() {
     <section className="container mx-auto">
       <Image placeholder="blur" src={CDCR} alt="CDCR" />
       <div className="text-center my-24">
-        <h1 className="text-3xl">Thanks for scrolling to the footer</h1>
+        <h1 className="text-3xl font-hand">Thanks for scrolling to the footer</h1>
         <p>if u found a 🐞, please ignore 👻, hava nice day!</p>
         <p className="text-xs text-secondary">
           <a target="_blank" rel="noreferrer" href="https://github.com/duongital/project-dk">
-            open source by @duongital
+            open src by @duongital
           </a>
         </p>
       </div>

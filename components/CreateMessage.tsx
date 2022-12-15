@@ -76,7 +76,10 @@ function CreateMessage() {
                   leaveTo="opacity-0 scale-95"
                 >
                   <Dialog.Panel className="w-full max-w-lg transform overflow-hidden rounded-md bg-primary py-6 text-left align-middle shadow-lg transition-all">
-                    <Dialog.Title as="h3" className="text-2xl font-light leading-6 text-white uppercase text-center">
+                    <Dialog.Title
+                      as="h3"
+                      className="text-2xl font-light leading-6 text-secondary uppercase text-center"
+                    >
                       Viết lời chúc
                     </Dialog.Title>
                     <article className="container py-12">
@@ -86,7 +89,7 @@ function CreateMessage() {
                           className="flex flex-col gap-y-4 w-full pl-4 md:pl-6 pr-4 md:pr-0"
                         >
                           <label htmlFor="author" className="flex flex-col ">
-                            <span className="text-white">Người gửi</span>
+                            <span className="text-secondary">Người gửi</span>
                             <input
                               className="block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary sm:text-sm p-2 text-secondary"
                               value={message.author}
@@ -98,7 +101,7 @@ function CreateMessage() {
                             />
                           </label>
                           <label htmlFor="content" className="flex flex-col text-white rounded-md">
-                            <span className="text-white">Lời chúc</span>
+                            <span className="text-secondary">Lời chúc</span>
                             <textarea
                               className="text-secondary p-2 block w-full rounded-md border-gray-300 shadow-sm focus:border-secondary focus:ring-secondary sm:text-sm"
                               value={message.content}

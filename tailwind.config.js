@@ -4,12 +4,13 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: '#D8A1A1',
-        secondary: '#AF3742',
-        card: '#D9D9D9',
-        success: '#4cb71a',
-        warning: '#eb9855',
+        primary: '#FFE2E2',
+        secondary: '#FF597B',
+        card: '#EEEEEE',
       },
+    },
+    fontFamily: {
+      hand: ['Cedarville Cursive'],
     },
   },
   plugins: [require('@tailwindcss/forms')],

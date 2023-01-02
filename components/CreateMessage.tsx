@@ -113,7 +113,11 @@ function CreateMessage() {
                               name="content"
                             />
                           </label>
-                          <button className="bg-secondary w-fit rounded-md text-white py-2 px-12 mx-auto" type="submit">
+                          <button
+                            disabled
+                            className="bg-secondary w-fit rounded-md text-white py-2 px-12 mx-auto"
+                            type="submit"
+                          >
                             Gửi
                           </button>
                         </form>
